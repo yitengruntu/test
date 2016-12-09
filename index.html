@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <script src="redirect.js" type="text/javascript" charset="utf-8" async defer></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body>
       <a href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx57396d7aced16b5a&redirect_uri=http%3A%2F%2Ftest2.redshift.cc%2F&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'>微信登陆</a>
@@ -23,7 +24,6 @@
         var str="<a href='https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx57396d7aced16b5a&secret=eb55d090befc00183074a6f5230bbe14&code="+getQueryVariable('code')+"&grant_type=authorization_code'>有了！！！</a>";
         newElement.innerHTML=str;
         document.body.appendChild(newElement);//向文档添加div对象
-
       </script>
     </body>
 </html>
