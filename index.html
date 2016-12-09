@@ -2,8 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <script src="redirect.js" type="text/javascript" charset="utf-8" async defer></script>
     </head>
     <body>
-      <a href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx57396d7aced16b5a&redirect_uri=http%3A%2F%2Ftest2.redshift.cc&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'>微信登陆</a>
+      <a href='https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx57396d7aced16b5a&redirect_uri=http%3A%2F%2Ftest2.redshift.cc%2F&response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect'>微信登陆</a>
+      <div id='123123'>
+
+      </div>
+      <script>
+        var newElement=document.createElement("div");//创建div对象
+        var str="<u>"+Request["code"]+"</u>,欢迎光临!<br>您的E-mail是:<u>"+Request["state"]+"</u>";//利用实例["字段名称"]获取参数内容
+        newElement.innerHTML=str;
+        document.body.appendChild(newElement);//向文档添加div对象
+      </script>
     </body>
 </html>
