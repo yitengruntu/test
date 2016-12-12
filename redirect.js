@@ -3,13 +3,14 @@
 * @Date:   2016-12-09 18:55:07
 * @Last Modified by:   Song Zhang
 <<<<<<< HEAD
-* @Last Modified time: 2016-12-12 13:59:25
+* @Last Modified time: 2016-12-12 14:02:50
 =======
 * @Last Modified time: 2016-12-10 16:29:45
 >>>>>>> e08d68150700f2217d8348ae5058a66d9cc6a928
 */
 
 'use strict';
+var url='http://54.223.161.85:3000/wechat/getUserInfo'
 
 function loadXMLDoc()
 {
@@ -30,7 +31,6 @@ xmlhttp.onreadystatechange=function()
     }
   }
 var str="https://api.weixin.qq.com/sns/oauth2/access_token?appid=wx57396d7aced16b5a&secret=eb55d090befc00183074a6f5230bbe14&code="+getQueryVariable('code')+"&grant_type=authorization_code";
-var url='http://54.223.161.85:3000/wechat/getUserInfo'
 xmlhttp.open("GET",str,true);
 xmlhttp.send();
 }
