@@ -2,7 +2,7 @@
 * @Author: Song Zhang
 * @Date:   2016-12-09 18:55:07
 * @Last Modified by:   Song Zhang
-* @Last Modified time: 2016-12-10 15:36:48
+* @Last Modified time: 2016-12-12 11:43:19
 */
 
 'use strict';
@@ -17,13 +17,22 @@ function getQueryVariable(variable) {
     return(false);
   }
 
-$(document).ready(function(){
-  $("button").click(function(){
-    $.getJSON(str,function(result){
-      $.each(result, function(i, field){
+$(document).ready(function() {
+  $("button").click(function() {
+    $.getJSON(str,function(result) {
+      $.each(result, function(i, field) {
         $("p").append(field + " ");
       });
     });
   });
 });
 
+var obj = new WxLogin({
+  id:"QRCode",
+  appid: "wx57396d7aced16b5a",
+  scope: "snsapi_userinfo",
+  redirect_uri: "test2.redshift.cc",
+  state: "",
+  style: "",
+  href: ""
+});
