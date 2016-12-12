@@ -3,7 +3,7 @@
 * @Date:   2016-12-09 18:55:07
 * @Last Modified by:   Song Zhang
 <<<<<<< HEAD
-* @Last Modified time: 2016-12-12 14:37:17
+* @Last Modified time: 2016-12-12 14:48:26
 =======
 * @Last Modified time: 2016-12-10 16:29:45
 >>>>>>> e08d68150700f2217d8348ae5058a66d9cc6a928
@@ -66,8 +66,8 @@ $(document).ready(function() {
 var obj = new WxLogin({
   id:"QRCode",
   appid: "wxbb2d238100b7ec7e",
-  scope: "snsapi_userinfo",
-  redirect_uri: "http%3a%2f%2fopen.wechat.redshift.cc",
+  scope: "snsapi_login",
+  redirect_uri: "http%3a%2f%2ftest2.wechat.redshift.cc",
   state: "",
   style: "",
   href: ""
