@@ -3,7 +3,7 @@
 * @Date:   2016-12-09 18:55:07
 * @Last Modified by:   Song Zhang
 <<<<<<< HEAD
-* @Last Modified time: 2016-12-12 16:12:13
+* @Last Modified time: 2016-12-12 16:13:37
 =======
 * @Last Modified time: 2016-12-10 16:29:45
 >>>>>>> e08d68150700f2217d8348ae5058a66d9cc6a928
@@ -49,7 +49,7 @@ $(document).ready(function() {
   $("button").click(function() {
     $.ajax({
       url: url,
-      data: {'code': getQueryVariable(code)},
+      data: {'code': getQueryVariable('code')},
       type: 'POST',
       success: function(result){
         console.log(result)
